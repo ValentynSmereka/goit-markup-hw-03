@@ -7,20 +7,25 @@
   --button-color: #4d5ae5;
 }
 
-h1,h2,h3,h4,p{
+h1,
+h2,
+h3,
+h4,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-ul,ol{
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
-img{
+img {
   display: block;
 }
-button{
+button {
   cursor: pointer;
 }
 
@@ -28,13 +33,12 @@ body {
   font-family: var(--primary-font);
   color: var(--secondary-text-color);
 }
-.container{
+.container {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-bottom: 15px;
-
 }
 
 .list {
@@ -70,10 +74,11 @@ body {
   line-height: 1.5;
 
   letter-spacing: 0.04em;
-  
 
   color: var(--button-color);
   background: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #E7E9FC;
 }
 
 .button {
@@ -84,10 +89,17 @@ body {
   line-height: 1.5;
 
   letter-spacing: 0.04em;
-  
 
   color: #ffffff;
   background: #4d5ae5;
+
+  width: 169px;
+  height: 56px;
+  text-align: center;
+
+  margin: auto;
+  display: block;
+  border-radius: 4px;
 }
 
 .button:hover,
@@ -95,7 +107,26 @@ body {
   background: #404bbf;
   color: #ffffff;
 }
+
 /* =======================Header======================== */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+}
 .logo-w {
   font-family: var(--secondary-font);
 
@@ -107,6 +138,11 @@ body {
   text-transform: uppercase;
 
   color: #4d5ae5;
+
+  margin-right: 76px;
+}
+.header-item:not(:last-child) {
+  margin-right: 40px;
 }
 .logo-s {
   color: var(--primaru-text-color);
@@ -123,6 +159,7 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--secondary-text-color);
+  margin-right: 40px;
 }
 
 .header-link {
@@ -136,6 +173,26 @@ body {
 }
 
 /* ================Section=================== */
+.container-hero {
+  width: 1440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.section {
+  padding-bottom: 120px;
+}
+.section-items:not(:last-child){
+  margin-right: 24px;
+}
+.proces-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .hero-title {
   font-size: 56px;
@@ -145,6 +202,11 @@ body {
   letter-spacing: 0.02em;
 
   color: #ffffff;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  padding-top: 188px;
 }
 
 .hero {
@@ -158,7 +220,9 @@ body {
 
   letter-spacing: 0.02em;
   color: var(--primaru-text-color);
+  
 }
+
 
 .secondary-img-title {
   font-weight: 500;
@@ -178,6 +242,8 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--primaru-text-color);
+  padding-top: 120px;
+  margin-bottom: 72px;
 }
 
 .section-text {
@@ -199,15 +265,12 @@ body {
   background: #f4f4fd;
 }
 
-/* ===========Footer=============== */
+.proces-list {
+  display: flex;
+  align-items: center;
 
-.footer {
-  background-color: var(--primaru-text-color);
+  margin-top: 120px;
 }
-.footer-logo-s {
-  color: #f4f4fd;
-}
-
 .section-img-title {
   font-size: 36px;
   line-height: 1.11;
@@ -216,7 +279,81 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--primaru-text-color);
+
+  margin-bottom: 72px;
 }
+
+.list-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.our-team {
+  background: #f4f4fd;
+}
+
+/* ===========Footer=============== */
+.footer-container {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.logo-footer {
+  padding-top: 100px;
+  margin-bottom: 16px;
+}
+.footer {
+  background-color: var(--primaru-text-color);
+}
+.footer-logo-s {
+  color: #f4f4fd;
+}
+
 .footer-section-text {
+  margin-right: 864px;
+  padding-bottom: 100px;
+
   color: #e7e9fc;
+}
+
+.container-portfolio-button {
+  display: flex;
+ 
+  justify-content:center;
+  margin-top: 96px;
+  margin-bottom: 72px;
+}
+.item-portfolio:not(:last-child) {
+  margin-right: 24px;
+ 
+}
+
+.portfolio-img-list{display: flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  row-gap:48px;
+
+  
+  
+
+}
+.portfolio-img-item{
+  border: 1px solid #E7E9FC;
+}
+
+.secondary-title-portfolio{ margin-left: 16px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.portfilio-section-text{
+  margin-left: 16px;
+  padding-bottom: 32px;
 }
