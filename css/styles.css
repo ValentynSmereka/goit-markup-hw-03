@@ -189,7 +189,7 @@ body {
   padding-top: 120px;
 }
 .section-items:not(:last-child) {
-  margin-right: 24px;
+  margin-right: 22px;
 }
 .proces-container {
   display: flex;
@@ -222,10 +222,11 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
+  
   letter-spacing: 0.02em;
   color: var(--primaru-text-color);
   padding-top: 32px;
+  padding-bottom: 8px;
 }
 
 .team-text {
@@ -269,12 +270,15 @@ body {
   letter-spacing: 0.02em;
 
   color: var(--secondary-text-color);
+  
+  align-items: stretch
 }
 .section-title {
   font-size: 36px;
   line-height: 1.11;
 
   letter-spacing: 0.02em;
+  
 }
 
 .sectiom-team {
@@ -284,6 +288,7 @@ body {
 .proces-list {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .section-img-title {
   font-size: 36px;
